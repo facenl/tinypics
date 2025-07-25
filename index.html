@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Free online image compressor tool. Reduce image file size while maintaining quality. Perfect for websites and social media.">
     <meta name="keywords" content="image compressor, photo shrink, reduce image size, online image optimizer, picture compressor">
-    <meta name="author" content="Cartoon Image Compressor">
-    <meta property="og:title" content="Cartoon Image Compressor - Free Online Tool">
+    <meta name="author" content="TinyPics Image Compressor">
+    <meta property="og:title" content="TinyPics Image Compressor - Free Online Tool">
     <meta property="og:description" content="Compress your images easily with our free online tool. Reduce file size without losing quality.">
     <meta property="og:type" content="website">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><circle cx='64' cy='64' r='60' fill='%23FF9F43' stroke='%23FECA57' stroke-width='4'/><rect x='32' y='40' width='64' height='48' rx='8' fill='white' stroke='%23576574' stroke-width='3'/></svg>">
-    <title>TinyPics | Free Online Tool</title>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7135084226084123"
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><circle cx='64' cy='64' r='60' fill='%23FF9F43' stroke='%23FECA57' stroke-width='4'/><rect x='32' y='40' width='64' height='48' rx='8' fill='white' stroke='%23576574' stroke-width='3'/></svg>">
+    <title>TinyPics | Free Online Image Compressor Tool</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7135084226084123"
      crossorigin="anonymous"></script>
     <style>
         /* Cartoon-style CSS */
@@ -31,10 +31,11 @@
             color: var(--dark-color);
             background-image: radial-gradient(circle, #f5f5f5 1px, transparent 1px);
             background-size: 20px 20px;
+            line-height: 1.6;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -45,11 +46,14 @@
             position: relative;
         }
         
-        h1 {
+        h1, h2, h3 {
             color: var(--primary-color);
+            text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+        }
+        
+        h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
-            text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
             position: relative;
             display: inline-block;
         }
@@ -63,6 +67,13 @@
             height: 5px;
             background: var(--accent-color);
             border-radius: 5px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 40px;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
         }
         
         .cloud {
@@ -285,6 +296,9 @@
             padding: 20px;
             color: var(--dark-color);
             font-size: 0.9rem;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         
         .star {
@@ -297,6 +311,64 @@
         @keyframes twinkle {
             0% { opacity: 0.5; }
             100% { opacity: 1; }
+        }
+        
+        /* Content sections */
+        .content-section {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .content-section p {
+            margin-bottom: 15px;
+        }
+        
+        .tips-list {
+            padding-left: 20px;
+        }
+        
+        .tips-list li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .tips-list li:before {
+            content: "🌟";
+            position: absolute;
+            left: 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: var(--primary-color);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        
+        .faq-question:after {
+            content: "+";
+            margin-left: 10px;
+            font-size: 1.2em;
+        }
+        
+        .faq-question.active:after {
+            content: "-";
+        }
+        
+        .faq-answer {
+            display: none;
+            padding: 10px 0 0 20px;
+            border-left: 3px solid var(--secondary-color);
+            margin-left: 5px;
         }
         
         /* Responsive design */
@@ -312,21 +384,30 @@
             .preview {
                 flex-direction: column;
             }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
         }
-		/* 添加到您的CSS中 */
-.logo {
-    transition: transform 0.3s ease;
-    animation: bounce 2s infinite;
-}
-
-.logo:hover {
-    transform: rotate(10deg) scale(1.1);
-}
-
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-}
+        
+        /* Logo animation */
+        .logo {
+            transition: transform 0.3s ease;
+            animation: bounce 2s infinite;
+        }
+        
+        .logo:hover {
+            transform: rotate(10deg) scale(1.1);
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
     </style>
 </head>
 
@@ -342,7 +423,6 @@
 <body>
     <div class="container">
         <header>
-		<!-- 在标题前添加图标 -->
             <div class="logo" style="width: 80px; height: 80px; margin: 0 auto 15px;">
                 <svg width="100%" height="100%" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="64" cy="64" r="60" fill="#FF9F43" stroke="#FECA57" stroke-width="4"/>
@@ -365,10 +445,18 @@
             </div>
             <div class="cloud cloud-1"></div>
             <div class="cloud cloud-2"></div>
-            <h1>TinyPics | Image Compressor</h1>
-            <p>Shrink your images while keeping them cute!</p>
+            <h1>TinyPics Image Compressor</h1>
+            <p>Shrink your images while keeping them cute and high quality!</p>
         </header>
         
+        <!-- How It Works Section -->
+        <div class="content-section">
+            <h2>How Our Image Compressor Works</h2>
+            <p>TinyPics is a free online tool that helps you reduce the file size of your images without sacrificing too much quality. Perfect for websites, social media, email attachments, and more!</p>
+            <p>Our smart compression algorithm analyzes your images and applies the optimal settings to make them smaller while maintaining visual appeal.</p>
+        </div>
+        
+        <!-- Main Tool Section -->
         <div class="upload-area" id="dropArea">
             <div class="upload-icon">📷</div>
             <p class="upload-text">Drag & drop your image here or click to upload</p>
@@ -422,12 +510,83 @@
             </div>
         </div>
         
+        <!-- Image Optimization Tips -->
+        <div class="content-section">
+            <h2>Image Optimization Tips</h2>
+            <p>Follow these best practices to get the most out of your images:</p>
+            <ul class="tips-list">
+                <li><strong>Choose the right format:</strong> Use JPEG for photographs, PNG for graphics with transparency, and WebP for modern browsers.</li>
+                <li><strong>Resize before uploading:</strong> Upload images at the exact size they'll be displayed to avoid unnecessary data.</li>
+                <li><strong>Find the quality sweet spot:</strong> Start with 70-80% quality and adjust based on your needs.</li>
+                <li><strong>Use descriptive filenames:</strong> Helps with SEO and organization (e.g., "sunset-beach.jpg" instead of "IMG123.jpg").</li>
+                <li><strong>Consider responsive images:</strong> Serve different sizes for different devices to improve loading times.</li>
+            </ul>
+        </div>
+        
+        <!-- FAQ Section -->
+        <div class="content-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is TinyPics really free to use?</div>
+                <div class="faq-answer">
+                    <p>Yes! TinyPics is completely free to use with no hidden charges. We may display ads to support the service, but there are no premium features or paywalls.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Are my images stored on your servers?</div>
+                <div class="faq-answer">
+                    <p>No, all image processing happens in your browser. We don't upload or store your images on our servers, ensuring your privacy and security.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What image formats do you support?</div>
+                <div class="faq-answer">
+                    <p>We support JPEG, PNG, GIF, and WebP formats. The compressed image will be saved in the same format as the original unless you choose otherwise.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How much can I reduce my image file size?</div>
+                <div class="faq-answer">
+                    <p>Compression results vary depending on the original image quality and format. Typically, you can reduce file sizes by 50-80% without noticeable quality loss.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Can I compress multiple images at once?</div>
+                <div class="faq-answer">
+                    <p>Currently, our tool processes one image at a time. For batch processing, you would need to compress each image separately.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Why Compress Images Section -->
+        <div class="content-section">
+            <h2>Why Compress Your Images?</h2>
+            <p>Image compression is essential for modern websites and digital content. Here's why you should optimize your images:</p>
+            
+            <p><strong>Faster loading times:</strong> Smaller images load quicker, improving user experience and reducing bounce rates.</p>
+            
+            <p><strong>Better SEO rankings:</strong> Search engines favor fast-loading websites, and image optimization is a key factor.</p>
+            
+            <p><strong>Reduced bandwidth usage:</strong> Save on hosting costs and make your site more accessible to users with limited data plans.</p>
+            
+            <p><strong>Improved social media sharing:</strong> Compressed images upload faster and display better on platforms like Facebook and Instagram.</p>
+            
+            <p><strong>Email attachments:</strong> Smaller files are easier to send and receive via email.</p>
+        </div>
+        
         <footer>
-            <p>© 2025 TinyPics | Making image compression fun!</p>
+            <p>© 2025 TinyPics | Making image compression fun and easy!</p>
             <p>
                 <a href="privacy.html" style="color: var(--primary-color); text-decoration: none; margin: 0 10px;">Privacy Policy</a>
                 <a href="terms.html" style="color: var(--primary-color); text-decoration: none; margin: 0 10px;">Terms of Service</a>
+                <a href="contact.html" style="color: var(--primary-color); text-decoration: none; margin: 0 10px;">Contact Us</a>
             </p>
+            <p>TinyPics is a free online tool that helps you optimize images for web and mobile use. All processing happens in your browser - we never upload your images to our servers.</p>
         </footer>
     </div>
 
@@ -465,9 +624,19 @@
             const compressedImage = document.getElementById('compressedImage');
             const originalInfo = document.getElementById('originalInfo');
             const compressedInfo = document.getElementById('compressedInfo');
+            const faqQuestions = document.querySelectorAll('.faq-question');
             
             let originalFile = null;
             let compressedBlob = null;
+            
+            // FAQ toggle functionality
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    question.classList.toggle('active');
+                    const answer = question.nextElementSibling;
+                    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                });
+            });
             
             // Click upload button
             uploadBtn.addEventListener('click', function() {
@@ -503,7 +672,7 @@
             // Handle selected file
             function handleFile(file) {
                 if (!file.type.match('image.*')) {
-                    alert('Please select an image file!');
+                    alert('Please select an image file (JPEG, PNG, GIF, or WebP)!');
                     return;
                 }
                 
@@ -516,7 +685,7 @@
                     
                     // Show file info
                     const fileSize = (file.size / 1024).toFixed(2);
-                    originalInfo.textContent = `${file.name} | ${fileSize} KB`;
+                    originalInfo.textContent = `${file.name} | ${fileSize} KB | ${file.type}`;
                     
                     // Show controls
                     controls.style.display = 'block';
@@ -544,17 +713,24 @@
                             // Show file info
                             const fileSize = (blob.size / 1024).toFixed(2);
                             const reduction = ((originalFile.size - blob.size) / originalFile.size * 100).toFixed(2);
-                            compressedInfo.textContent = `Compressed | ${fileSize} KB (${reduction}% smaller)`;
+                            compressedInfo.textContent = `Compressed | ${fileSize} KB (${reduction}% smaller) | ${blob.type}`;
                             
                             // Set download link
                             downloadBtn.href = e.target.result;
-                            downloadBtn.download = `compressed_${originalFile.name}`;
+                            downloadBtn.download = `compressed_${originalFile.name.replace(/\.[^/.]+$/, "")}.${blob.type.split('/')[1]}`;
+                            
+                            // Track successful compression
+                            gtag('event', 'image_compressed', {
+                                'original_size': originalFile.size,
+                                'compressed_size': blob.size,
+                                'reduction_percentage': reduction
+                            });
                         };
                         reader.readAsDataURL(blob);
                     })
                     .catch(err => {
                         console.error('Compression error:', err);
-                        alert('Error compressing image!');
+                        alert('Error compressing image! Please try again.');
                     });
             });
             
@@ -606,15 +782,14 @@
             }
         });
     </script>
-	<script>
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "https://hm.baidu.com/hm.js?8fb3aac24a260b250add17590f792c22";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
-</script>
-
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?8fb3aac24a260b250add17590f792c22";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </body>
 </html>
